@@ -46,7 +46,7 @@ stuff_plot2 <- ggplot(stuff_plot,
 
 stuff_plot3 <- stuff_plot2 + 
   geom_point(stat="identity", 
-             position=position_dodge(0.5), size=3) + 
+             position=position_dodge(0.5), size=5) + 
   geom_linerange(aes(ymin=lower, ymax=upper), 
                  position = position_dodge(0.5), size=1.5) + 
   labs(y="Proportion", 
@@ -58,6 +58,7 @@ stuff_plot3 <- stuff_plot2 +
                         c("#999999", "#56B4E9", "#E69F00"))
 
 print(stuff_plot3)
+
 
 #Same layout with P_court or C_dur
 #stuff_plot4 <- stuff_plot3
