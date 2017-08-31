@@ -52,7 +52,7 @@ stuff_plot3 <- stuff_plot2 +
   labs(y="Proportion", 
        x="Phase") +
   #ggtitle("Evolved Population") + 
-  theme(text = element_text(size=15), 
+  theme(text = element_text(size=20), 
         axis.text.x= element_text(size=15), axis.text.y= element_text(size=15)) +
   scale_colour_manual(values=
                         c("#999999", "#56B4E9", "#E69F00"))
