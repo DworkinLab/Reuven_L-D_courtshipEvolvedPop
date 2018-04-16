@@ -31,8 +31,8 @@ plot(allEffects(stuff))
 
 
 #stuff2 <- lmer(C_dur ~ Trt + Phase + Phase:Trt + Trt:Population + (1|Day), data=court)
-
-stuff2 <- lmer(P_court ~ Treatment*Phase + Treatment:Population + Observer + (1|Day), data=court)
+summary(court)
+stuff2 <- lmer(P_court ~ Treatment*Phase + Observer + (1|Day) + (1|Treatment:Population), data=court)
 summary(stuff2)
 car::Anova(stuff2)
 plot(allEffects(stuff2))
